@@ -1,0 +1,301 @@
+//class and object array
+    import java.util.*;
+class Student
+  {​
+    int rollno;
+    String name;
+    void display()
+    {​
+      System.out.println(rollno+" "+name);
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Student st[]=new Student[5];
+      Scanner sc=new Scanner(System.in);
+      for(int i=0;i<5;i++)
+        {​
+          System.out.println("enter Student information");
+          st[i]=new Student();
+          System.out.println("enter rollno");
+          st[i].rollno=sc.nextInt();
+          System.out.println("enter name");
+          st[i].name=sc.next();
+        }​
+      for(int i=0;i<5;i++)
+        {​
+          System.out.println(st[i].rollno+" "+st[i].name);
+        }​
+     
+    }​
+  }​
+===================================================================
+//contructor and this
+import java.util.*;
+class Product
+  {
+    String pname;
+    int pid;
+    Product(String pname, int pid)
+    {
+      this.pname=pname;
+      this.pid=pid;
+    }
+    void display()
+    {
+      System.out.println("product name: "+pname+" product id: "+pid);
+    }
+  }
+class Con
+  {
+     public static void main(String args[])
+    {
+      Product pr[]=new Product[5];
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter product information");
+      for(int i=0;i<3;i++)
+        {
+          System.out.println("enter product id");
+          int pid=sc.nextInt();
+          System.out.println("enter product name");
+          String pname=sc.next();
+          pr[i]=new Product(pname, pid);
+        }
+      for(int i=0;i<5;i++)
+        {
+          pr[i].display();
+        }
+    }
+  }
+========================================================
+single inheritence using constructor
+
+    import java.util.*;
+class Student
+  {​
+    int rollno;
+    String name;
+    Student(int rollno,String name)
+    {​
+      this.rollno=rollno;
+      this.name=name;
+    }​
+    void display()
+    {​
+      System.out.println(rollno+" "+name);
+    }​
+  }​
+class MathsStudent extends Student
+  {​
+    String subject;
+    MathsStudent(int rollno,String name,String subject)
+    {​
+      super(rollno,name);
+      this.subject=subject;
+    }​
+    void subjectDetails()
+    {​
+      System.out.println(rollno+" "+name+" "+subject);
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      MathsStudent st[]=new MathsStudent[5];
+      Scanner sc=new Scanner(System.in);
+      for(int i=0;i<5;i++)
+        {​
+          System.out.println("enter Student information");
+          System.out.println("enter rollno");
+         int  rollno=sc.nextInt();
+          System.out.println("enter name");
+       String name=sc.next();
+        System.out.println("enter subject");
+          String subject=sc.next();
+     st[i]=new MathsStudent(rollno,name,subject);
+        }​
+      for(int i=0;i<5;i++)
+        {​
+         st[i].subjectDetails();
+        }​
+     
+    }​
+  }​
+========
+without constructor
+    import java.util.*;
+class Student
+  {​
+    int rollno;
+    String name;
+   
+    void display()
+    {​
+      System.out.println(rollno+" "+name);
+    }​
+  }​
+class MathsStudent extends Student
+  {​
+    String subject;
+    
+    void subjectDetails()
+    {​
+      System.out.println(rollno+" "+name+" "+subject);
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      MathsStudent st[]=new MathsStudent[5];
+      Scanner sc=new Scanner(System.in);
+      for(int i=0;i<5;i++)
+        {​
+          st[i]=new MathsStudent();
+          System.out.println("enter Student information");
+          System.out.println("enter rollno");
+          st[i].rollno=sc.nextInt();
+          System.out.println("enter name");
+       st[i].name=sc.next();
+        System.out.println("enter subject");
+          st[i].subject=sc.next();
+     
+        }​
+      for(int i=0;i<5;i++)
+        {​
+         st[i].subjectDetails();
+        }​
+     
+    }​
+  }​
+
+ ======================================================================
+//polymorphism 
+     class Shape
+  {​
+   static double area(float side)
+    {​
+      return side*side;
+    }​
+  static double area(double length,double breadth)
+    {​
+      return length*breadth;
+    }​
+    
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+     
+     double square= Shape.area(23);
+      System.out.println(square);
+      double rect=Shape.area(23,45);
+      System.out.println(rect);
+    }​
+  }​
+===========================================
+//super keyword
+    class Car
+    {​
+      //Variables
+      String color="red";
+      void run()
+      {​
+        System.out.println("car is Running");
+      }​
+    }​
+class Bike extends Car{​
+ String color="black";
+  void displayColor()
+  {​
+    System.out.println(super.color);
+  }​
+  void run()
+  {​
+   super.run();
+    System.out.println("Bike is running");
+  }​
+}​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Bike b=new Bike();
+      b.run();
+      System.out.println(b.color);
+      b.displayColor();
+    }​
+  }​
+=======================================================
+//encapsulation-setters and getters
+    import java.util.*;
+class Product
+  {​
+    private int pid;
+    private String pname;
+    void setPid(int pid)
+    {​
+      this.pid=pid;
+    }​
+    void setPname(String pname)
+    {​
+      this.pname=pname;
+    }​
+    int getPid()
+    {​
+      return this.pid;
+    }​
+    String getPname()
+    {​
+      return this.pname;
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Product p=new Product();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter  product id");
+      int pid=sc.nextInt();
+      p.setPid(pid);
+      p.setPname("oranges");
+      System.out.println(p.getPid()+" "+p.getPname());
+      
+    }​
+  }​
+=======================================================================
+//abstraction using abstract class
+    import java.util.*;
+ abstract class Product
+  {​
+     int pid;
+     String pname;
+   abstract void productQuantity(int Quantity);
+    void productDetails()
+    {​
+      System.out.println(pid+" "+pname);
+    }​
+    
+  }​
+class Fruits extends Product
+  {​
+    public void productQuantity(int Quantity)
+    {​
+      System.out.println(Quantity);
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Fruits fruit=new Fruits();
+      fruit.productQuantity(12);
+      
+    }​
+  }​
+

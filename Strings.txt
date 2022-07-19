@@ -1,0 +1,165 @@
+//compareTo
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      String str="lalitha";
+     
+      String str1=new String("lalitha");
+     int result= str.compareTo(str1);
+      System.out.println(result);
+     
+    }​
+  }​
+===========================================================
+​//endsWith
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Scanner sc=new Scanner(System.in);
+System.out.println("enter String");
+     String str=sc.nextLine();
+      System.out.println("Enter the word which you want to find");
+      String word=sc.next();
+      if(str.endsWith(word))
+      {​
+        System.out.println("Found");
+      }​
+      else{​
+        System.out.println("not found");
+      }​
+     
+    }​
+  }​
+===========================================================
+​//startsWith
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Scanner sc=new Scanner(System.in);
+System.out.println("enter String");
+     String str=sc.nextLine();
+      System.out.println("Enter the word which you want to find");
+      String word=sc.next();
+      if(str.StartsWith(word))
+      {​
+        System.out.println("Found");
+      }​
+      else{​
+        System.out.println("not found");
+      }​
+     
+    }​
+  }​
+========================================================
+//format method.
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+    Float f=123.426799f;
+    System.out.println(String.format("%.2f",f));
+      //System.out.println(result);
+     
+    }​
+  }​
+=====================
+//getBytes
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+    String str="lalitha";
+    byte arr[]=str.getBytes();
+      for(int i=0;i<arr.length;i++)
+        {​
+          System.out.println(arr[i]);
+        }​
+     
+    }​
+  }​
+=======================================
+indexOf
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+    String str="laliatha";
+    System.out.println(str.indexOf("a",5));
+     
+    }​
+  }
+==========================================
+//substring
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+    String str="laliatha";
+    System.out.println(str.substring(3,7));
+     
+    }​
+  }​
+==========================================
+//uppercase
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+    String str="laliatha";
+    System.out.println(str.toUpperCase());
+     
+    }​
+  }​
+==========================================
+//lowercase
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+    String str="laliatha";
+    System.out.println(str.toLowerCase());
+     
+    }​
+  }​
+===========================================
+//apend
+    
+import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+    StringBuffer str=new StringBuffer("lalitha");
+      System.out.println(str.append(" ujjannei"));
+      System.out.println(str); 
+    }​
+  }​
+​=============================================
+//delete
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+    StringBuffer str=new StringBuffer("lalitha");
+      System.out.println(str.delete(2,4));
+     // System.out.println(str); 
+    }​
+  }​
+
+​
+      
+    
+

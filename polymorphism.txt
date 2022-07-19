@@ -1,0 +1,174 @@
+//overloading or compile time polymorphism
+    class Addition
+  {​
+    void sum(int a,int b)
+    {​
+      System.out.println((a+b));
+    }​
+    void sum(float a,int b)
+    {​
+      System.out.println((a+b));
+    }​
+    void sum(int a,int b,int c)
+    {​
+      System.out.println((a+b+c));
+    }​
+    
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Addition addition=new Addition();
+      addition.sum(2,3);
+      addition.sum(2,3,4);
+      addition.sum(2.3f,4);
+      
+    }​
+  }​
+===========================================================
+method overriding or run time polymorphism
+
+    class BMW
+  {​
+    void Mileage()
+    {​
+      System.out.println("18 KM");
+    }​
+   
+  }​
+class AUDI extends BMW
+  {​
+    //overriding
+    void Mileage()
+    {​
+      System.out.println("15 KM");
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      AUDI audi=new AUDI();
+      audi.Mileage();
+      
+      
+    }​
+  }​
+[12:33 PM] Lalitha Ujjaneni
+    class Vehicle
+  {​
+    void run()
+    {​
+      System.out.println("vehicle running");
+    }​
+  }​
+class Bike extends Vehicle
+  {​
+    //overriding
+    void run()
+    {​
+      System.out.println("Bike is running");
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+       Bike honda=new Bike();
+    honda.run();
+    }​
+   
+  }​
+===================================================================
+//super key word
+[12:48 PM] Lalitha Ujjaneni
+    class Vehicle
+  {​
+    String color="black";
+    void run()
+    {​
+      System.out.println("vehicle running");
+    }​
+  }​
+class Bike extends Vehicle
+  {​
+    String color="blue";
+    //overriding
+    void color()
+    {​
+      System.out.println(super.color);
+    }​
+    void run()
+    {​
+      super.run();
+      System.out.println("Bike is running");
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+       Bike honda=new Bike();
+    honda.run();
+      System.out.println(honda.color);
+      honda.color();
+    }​
+   
+  }​
+==============================================================================
+final keyword
+[1:22 PM] Lalitha Ujjaneni
+    final class Vehicle
+  {​
+      final String color="black";
+    color="Red";
+    Vehicle()
+    {​
+      System.out.println("parent Constructor");
+    }​
+   final void run()
+    {​
+      System.out.println("vehicle running");
+    }​
+  }​
+class Bike extends Vehicle
+  {​
+    String color="blue";
+    //overriding
+    Bike()
+    {​
+      super();
+      System.out.println("child constructor");
+    }​
+    void color()
+    {​
+      System.out.println(super.color);
+    }​
+    void run()
+    {​
+      super.run();
+      System.out.println("Bike is running");
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+       Bike honda=new Bike();
+    honda.run();
+      System.out.println(honda.color);
+      honda.color();
+    }​
+   
+  }​
+
+=======================================================================================
+
+    TheObject classis the parent class of all the classes in java by default. In other words, it is the topmost class of java.
+    
+
+public String toString()
+returns the string representation of this object.
+
+

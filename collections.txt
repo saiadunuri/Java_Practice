@@ -1,0 +1,267 @@
+//methods of array....
+[1:26 PM] Lalitha Ujjaneni
+    add()
+addAll()
+remove()
+removeAll()
+contains()
+isEmpty()
+size()
+get()
+
+================================
+//Arraylist:
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      ArrayList Student=new ArrayList();
+      Student.add(123);
+      Student.add("lalitha");
+      Student.add("vijayawada");
+      Student.add(89.00);
+      System.out.println(Student);
+      for(int i=0;i<Student.size();i++)
+        {​
+          System.out.println(Student.get(i));
+        } 
+    }​
+  }​
+=======================================
+using for each
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      ArrayList list=new ArrayList();
+      list.add(123);
+      list.add("abc");
+      list.add(0.5);
+      System.out.println(list);
+      // for(int i=0;i<list.size();i++)
+      //   {​
+      //     System.out.println(list.get(i));
+      //   }​
+         //for each loop
+      
+      for(Object o:list)
+        {​
+          System.out.println(o);
+        }
+    }​
+  }​
+======================================
+//To store only integer value.
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+  ArrayList<Integer> list=new ArrayList<Integer>();
+     list.add(40);
+      list.add(45);
+      list.add(56);
+      System.out.println(list);
+      // for(int i=0;i<list.size();i++)
+      //   {​
+      //     System.out.println(list.get(i));
+      //   }​
+         //for each loop
+      
+      for(Integer o:list)
+        {​
+          System.out.println(o);
+        }
+    }​
+  }​
+===============================================
+//float values using user input
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+  ArrayList<Float> list=new ArrayList<Float>();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter array elements");
+      for(int i=0;i<3;i++)
+      list.add(sc.nextFloat());
+     
+      System.out.println("elements are");
+      for(Float f:list)
+        {​
+          System.out.println(f);
+        }​
+      //
+        
+        
+    }​
+  }​
+===========================================================
+//To insert value in perticular index...
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+  ArrayList<Float> list=new ArrayList<Float>();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter array elements");
+      for(int i=0;i<3;i++)
+      list.add(sc.nextFloat());
+      list.add(2,456.45f);
+     
+      System.out.println("elements are");
+      for(Float f:list)
+        {​
+          System.out.println(f);
+        }​ 
+    }​
+  }​
+==================================================
+//To delete perticular value...
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+  ArrayList<Float> list=new ArrayList<Float>();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter array elements");
+      for(int i=0;i<3;i++)
+      list.add(sc.nextFloat());
+      list.remove(3);
+     
+      System.out.println("elements are");
+      for(Float f:list)
+        {​
+          System.out.println(f);
+        }​ 
+    }​
+  }​
+=============================================
+//
+[1:23 PM] Lalitha Ujjaneni
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+  ArrayList<Float> list=new ArrayList<Float>();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter array elements");
+      for(int i=0;i<3;i++)
+      list.add(sc.nextFloat());
+      list.add(2,456.45f);
+     
+      System.out.println("elements are");
+      for(Float f:list)
+        {​
+          System.out.println(f);
+        }​
+      list.remove(3);
+       System.out.println(" after removing elements are");
+      for(Float f:list)
+        {​
+          System.out.println(f);
+        }​
+      ArrayList<Float> list1=new ArrayList<Float>();
+      list1.addAll(list);
+      System.out.println(list1);
+      
+    }​
+  }​
+=========================================================
+//to check perticular value is there or not ???
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+  ArrayList<Float> list=new ArrayList<Float>();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter array elements");
+      for(int i=0;i<3;i++)
+      list.add(sc.nextFloat());
+      list.add(2,456.45f);
+     
+      System.out.println("elements are");
+      for(Float f:list)
+        {​
+          System.out.println(f);
+        }​
+      list.remove(78.9f);
+       System.out.println(" after removing elements are");
+      for(Float f:list)
+        {​
+          System.out.println(f);
+        }​
+      ArrayList<Float> list1=new ArrayList<Float>();
+      list1.addAll(list);
+      System.out.println(list1);
+      
+      //
+      if(list.contains(23.0f))
+      {​
+        System.out.println("Found");
+      }​
+      else
+      {​
+        System.out.println("Not Found");
+      }​
+        
+        
+    }​
+  }​
+===================================================
+//linked list
+[1:36 PM] Lalitha Ujjaneni
+    import java.util.*;
+class Main
+  {​
+    public static void main(String args[])
+    {​
+  LinkedList<Float> list=new LinkedList<Float>();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter array elements");
+      for(int i=0;i<3;i++)
+      list.add(sc.nextFloat());
+       list.addFirst(345.67f);
+      list.add(2,456.45f);
+      list.addLast(290.23f);
+     
+      System.out.println("elements are");
+      for(Float f:list)
+        {​
+          System.out.println(f);
+        }​
+      list.remove(78.9f);
+       System.out.println(" after removing elements are");
+      for(Float f:list)
+        {​
+          System.out.println(f);
+        }​
+      LinkedList<Float> list1=new LinkedList<Float>();
+      list1.addAll(list);
+      System.out.println(list1);
+      
+      //
+      if(list.contains(23.0f))
+      {​
+        System.out.println("Found");
+      }​
+      else
+      {​
+        System.out.println("Not Found");
+      }​
+        
+        
+    }​
+  }​
+
+
+
+
+

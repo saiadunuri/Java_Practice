@@ -1,0 +1,228 @@
+[3:48 PM] Lalitha Ujjaneni
+//single level
+    class Person
+  {​
+    String name;
+    String address;
+    int pid;
+    void walk()
+    {​
+      System.out.println("Walking");
+    }​
+    void sleep()
+    {​
+      System.out.println("Sleeping");
+    }​
+    void eat()
+    {​
+      System.out.println("Eating");
+    }​
+  }​
+class Developer extends Person
+  {​
+    int did;
+    void coding()
+    {​
+      System.out.println("coding");
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Developer dev=new Developer();
+      dev.name="lalitha";
+      dev.address="Vijayawada";
+      dev.did=123;
+      System.out.println(dev.name+" "+dev.address+" "+dev.did);
+      dev.sleep();
+      dev.walk();
+      dev.eat();
+      dev.coding();
+        
+    }​
+  }​
+​==================================================================
+//hierachial
+    class Person
+  {​
+    String name;
+    String address;
+    int pid;
+    void walk()
+    {​
+      System.out.println("Walking");
+    }​
+    void sleep()
+    {​
+      System.out.println("Sleeping");
+    }​
+    void eat()
+    {​
+      System.out.println("Eating");
+    }​
+  }​
+class Developer extends Person
+  {​
+    int did;
+    void coding()
+    {​
+      System.out.println("coding");
+    }​
+  }​
+class Dancer extends Person{​
+  int gid;
+  void dancing()
+  {​
+    System.out.println("Dancing");
+  }​
+}​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Developer dev=new Developer();
+      dev.name="lalitha";
+      dev.address="Vijayawada";
+      dev.did=123;
+      System.out.println(dev.name+" "+dev.address+" "+dev.did);
+      dev.sleep();
+      dev.walk();
+      dev.eat();
+      dev.coding();
+      Dancer dance=new Dancer();
+        
+    }​
+  }​
+========================================================
+//multi level
+    class Person
+  {​
+    String name;
+    String address;
+    int pid;
+    void walk()
+    {​
+      System.out.println("Walking");
+    }​
+    void sleep()
+    {​
+      System.out.println("Sleeping");
+    }​
+    void eat()
+    {​
+      System.out.println("Eating");
+    }​
+  }​
+class Developer extends Person
+  {​
+    int did;
+    void coding()
+    {​
+      System.out.println("coding");
+    }​
+  }​
+class ApplicationDeveloper extends Developer
+  {​
+    void application()
+    {​
+      System.out.println("Mobile Application");
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Developer dev=new Developer();
+      dev.name="lalitha";
+      dev.address="Vijayawada";
+      dev.did=123;
+      System.out.println(dev.name+" "+dev.address+" "+dev.did);
+      dev.sleep();
+      dev.walk();
+      dev.eat();
+      dev.coding();
+      Dancer dance=new Dancer();
+        
+    }​
+  }​
+=======================================================================
+Hybrid inheritance
+    class Person
+  {​
+    String name;
+    String address;
+    int pid;
+    void walk()
+    {​
+      System.out.println("Walking");
+    }​
+    void sleep()
+    {​
+      System.out.println("Sleeping");
+    }​
+    void eat()
+    {​
+      System.out.println("Eating");
+    }​
+  }​
+class Developer extends Person
+  {​
+    int did;
+    void coding()
+    {​
+      System.out.println("coding");
+    }​
+  }​
+class Dancer extends Person{​
+  int gid;
+  void dancing()
+  {​
+    System.out.println("Dancing");
+  }​
+}​
+class ApplicationDeveloper extends Developer
+  {​
+    void application()
+    {​
+      System.out.println("Mobile Application");
+    }​
+  }​
+class Main
+  {​
+    public static void main(String args[])
+    {​
+      Developer dev=new Developer();
+      dev.name="lalitha";
+      dev.address="Vijayawada";
+      dev.did=123;
+      System.out.println(dev.name+" "+dev.address+" "+dev.did);
+      dev.sleep();
+      dev.walk();
+      dev.eat();
+      dev.coding();
+      Dancer dance=new Dancer();
+        
+    }​
+  }​
+=======================================================================
+//Task
+[4:08 PM] Lalitha Ujjaneni
+    Teacher
+Math Teacher
+Physics Teacher
+Teacher
+  name
+  address
+  tid
+  displaydetails(); method
+  mathteacher extends Teacher
+  subject
+  displaySubject();
+pyhsics extends mathteacher
+  main class
+  create object for  physicsteacher and mathteacher
+  and 
+  assign all values and print values
+
+

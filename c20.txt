@@ -1,0 +1,227 @@
+
+13. Write a JAVA program to input marks of five subjects Physics, Chemistry, Biology,     Mathematics and Computer. Calculate percentage and grade according to     following:
+    Percentage >= 90% : Grade A
+    Percentage >= 80% : Grade B
+    Percentage >= 70% : Grade C
+    Percentage >= 60% : Grade D
+    Percentage >= 40% : Grade E
+    Percentage < 40% : Grade F
+import java.util.*;
+class Perc
+  {
+    public static void main(String args[])
+    {
+      double a,b,c,d,e,maximum;
+      Scanner sc= new Scanner(System.in);
+      System.out.println("enter the marks");
+      a=sc.nextDouble();
+      b=sc.nextDouble();
+      c=sc.nextDouble();
+      d=sc.nextDouble();
+      e=sc.nextDouble();
+      System.out.println("enter maximum marks");
+      maximum=sc.nextDouble();
+      double total=a+b+c+d+e;
+      System.out.println("total marks"+total);
+      double percentage=(total/maximum)*100;
+      System.out.println("percentage is"+percentage);
+      int newpercentage=(int)percentage;
+      if(newpercentage>90)
+      {
+        System.out.println("the grade is a");
+      }
+      else if(newpercentage<90&&newpercentage>80)
+      {
+        System.out.println("the grade is b");
+      }
+      else if(newpercentage<80&&newpercentage>70)
+      {
+        System.out.println("the grade is c");
+      }
+      else if(newpercentage<70&&newpercentage>60)
+      {
+        System.out.println("the grade is d");
+      }
+      else
+      {
+        System.out.println("fail");
+      }
+        
+    }
+  }
+===========================================================================================================
+14. Write a JAVA program to input basiJAVAsalary of an employee and calculate its Gross     salary according to following:
+BasiJAVASalary <= 10000 : HRA = 20%, DA = 80%
+BasiJAVASalary <= 20000 : HRA = 25%, DA = 90%
+BasiJAVASalary > 20000 : HRA = 30%, DA = 95%
+/*Write a JAVA program to input basiJAVAsalary of an employee and calculate its Gross     salary according to following:
+BasiJAVASalary <= 10000 : HRA = 20%, DA = 80%
+BasiJAVASalary <= 20000 : HRA = 25%, DA = 90%
+BasiJAVASalary > 20000 : HRA = 30%, DA = 95%*/
+  
+import java.util.Scanner;
+class Salary
+  {
+    public static void main(String args[])
+    {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the basic salary of an employee");
+      int basic = sc.nextInt();
+      float HRA, DA, gross_salary;
+      if(basic<=10000)
+      {
+        HRA = (20*basic)/100;
+        DA = (80*basic)/100;
+      }
+      else if(basic<=20000)
+      {
+        HRA = (25*basic)/100;
+        DA = (90*basic)/100;
+      }
+      else
+      {
+        HRA = (30*basic)/100;
+        DA = (95*basic)/100;
+      }
+      gross_salary = HRA+DA+basic;
+      System.out.println("Gross salary of an employee is: "+gross_salary);
+    }
+  }
+
+
+===================================================================================================================
+15. Write a JAVA program to input electricity unit charges and calculate total     electricity bill according to the given condition:
+    For first 50 units Rs. 0.50/unit
+    For next 100 units Rs. 0.75/unit
+    For next 100 units Rs. 1.20/unit
+     For unit above 250 Rs. 1.50/unit
+     An additional surcharge of 20% is added to the bill
+/*
+Write a JAVA program to input electricity unit charges and calculate total     electricity bill according to the given condition:
+    For first 50 units Rs. 0.50/unit
+    For next 100 units Rs. 0.75/unit
+    For next 100 units Rs. 1.20/unit
+    For unit above 250 Rs. 1.50/unit
+  */
+import java.util.Scanner;
+class Electricity
+  {
+    public static void main(String args[])
+    {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("enter no. of units");
+      int units=sc.nextInt();
+      Double bill,surcharge;
+      if(units<=50)
+      {
+        bill=0.5*units;
+      }
+      else if(units<=150&&units>50){
+        bill=(0.5*50)+(units-50)*0.75;
+      }
+      else if(units<=250&&units>150){
+        bill=(0.5*units)+(100*0.75)+(units-150)*1.2;
+      }
+      else{
+        bill=(0.5*50)+(100*0.75)+(100*1.2)*(units-250)*1.5;
+      }
+      surcharge=(bill/100)*20;
+      bill=bill+surcharge;
+      System.out.println("the bill for "+units+" is "+bill);
+    }
+  }
+=====================================================================================================
+16. Write a JAVA program to print day of week name using switch case.
+import java.util.*;
+class Week{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter week number ");
+    int week=sc.nextInt();
+    switch(week) {
+      case 1:
+        System.out.println("sunday");
+        break;
+        case 2:
+        System.out.println("monday");
+        break;
+        case 3:
+        System.out.println("tuesday");
+        break;
+        case 4:
+        System.out.println("wednesday");
+        break;
+        case 5:
+        System.out.println("thursday");
+        break;
+        case 6:
+        System.out.println("friday");
+        break;
+        case 7:
+        System.out.println("saturday");
+        break;
+        default:
+        System.out.println("enter valid input");
+    }
+    
+  }
+  9618912817
+}
+===========================================================================
+17. Write a JAVA program to print all natural numbers from 1 to n. - using while loop
+
+==================================================================================
+18. Write a JAVA program to print all natural numbers in reverse (from n to 1). -     using while loop
+
+19. Write a JAVA program to print all alphabets from a to z. - using while loop
+
+20. Write a JAVA program to print all even numbers between 1 to 100. - using while     loop
+​[5:35 PM] Lalitha Ujjaneni
+    
+21. Write a JAVA program to print all odd number between 1 to 100.
+22. Write a JAVA program to find sum of all natural numbers between 1 to n.
+23. Write a JAVA program to find sum of all even numbers between 1 to n.
+24. Write a JAVA program to find sum of all odd numbers between 1 to n.
+25. Write a JAVA program to print multiplication table of any number.
+26. Write a JAVA program to count number of digits in a number.
+27. Write a JAVA program to find first and last digit of a number.
+28. Write a JAVA program to find sum of first and last digit of a number.
+29. Write a JAVA program to check whether a number is palindrome or not.
+30. Write a JAVA program to calculate sum of digits of a number.
+31. Write a JAVA program to calculate product of digits of a number.
+32. Write a JAVA program to enter a number and print its reverse.
+33. Write a JAVA program to find frequency of each digit in a given integer.
+34. Write a JAVA program to enter a number and print it in words.
+35. Write a JAVA program to print all ASCII character with their values.
+​[5:35 PM] Lalitha Ujjaneni
+    
+36. Write a JAVA program to find power of a number using for loop.
+37. Write a JAVA program to find all factors of a number.
+38. Write a JAVA program to calculate factorial of a number.
+39. Write a JAVA program to check whether a number is Prime number or not.
+40. Write a JAVA program to print all Prime numbers between 1 to n.
+41. Write a JAVA program to find sum of all prime numbers between 1 to n.
+42. Write a JAVA program to find all prime factors of a number.
+43. Write a JAVA program to check whether a number is Armstrong number or not.
+44. Write a JAVA program to print all Armstrong numbers between 1 to n.
+45. Write a JAVA program to check whether a number is Perfect number or not.
+46. Write a JAVA program to print all Perfect numbers between 1 to n.
+47. Write a JAVA program to check whether a number is Strong number or not.
+48. Write a JAVA program to print all Strong numbers between 1 to n.
+49. Write a JAVA program to print Fibonacci series up to n terms
+
+50. Write a JAVA program to print all negative elements in an array.
+51. Write a JAVA program to find second largest element in an array.
+51. Write a JAVA program to find second largest element in an array.
+52. Write a JAVA program to find maximum and minimum element in an array. 
+53. Write a JAVA program to count total number of even and odd elements in an array.
+54. Write a JAVA program to count total number of negative elements in an array.
+55. Write a JAVA program to copy all elements from an array to another array.
+56. Write a JAVA program to delete an element from an array at specified position.
+57. Write a JAVA program to count frequency of each element in an array.
+58. Write a JAVA program to print all unique elements in the array.
+59. Write a JAVA program to count total number of duplicate elements in an array.
+60. Write a JAVA program to delete an element from an array at specified position.
+61. Write a JAVA program to count frequency of each element in an array.
+62. Write a JAVA program to print all unique elements in the array.
+63. Write a JAVA program to count total number of duplicate elements in an array.

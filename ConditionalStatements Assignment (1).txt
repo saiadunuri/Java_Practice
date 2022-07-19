@@ -1,0 +1,85 @@
+1.Write a JAVA program to find maximum between two numbers. 
+2. Write a JAVA program to find maximum between three numbers. 
+3.Write a JAVA program to check whether a number is divisible by 5 and 11 or not. 
+4.Write a JAVA program to check whether a number is even or odd. 
+5.Write a JAVA program to check whether a year is leap year or not. 
+6.Write a JAVA program to check whether a character is alphabet or not. 
+7.Write a JAVA program to input any alphabet and check whether it is vowel or    consonant. 
+8.Write a JAVA program to input any character and check whether it is alphabet, digit    or special character. 
+9.Write a JAVA program to check whether a character is uppercase or lowercase  alphabet. 
+10. Write a JAVA program to input week number and print week day. 
+
+[4:01 PM] Lalitha Ujjaneni
+    
+Write a JAVA program to input basiJAVAsalary of an employee and calculate its Gross     salary according to following:
+BasiJAVASalary <= 10000 : HRA = 20%, DA = 80%
+BasiJAVASalary <= 20000 : HRA = 25%, DA = 90%
+BasiJAVASalary > 20000 : HRA = 30%, DA = 95%
+    
+Write a JAVA program to input electricity unit charges and calculate total     electricity bill according to the given condition:
+    For first 50 units Rs. 0.50/unit
+    For next 100 units Rs. 0.75/unit
+    For next 100 units Rs. 1.20/unit
+     For unit above 250 Rs. 1.50/unit
+    
+Write a JAVA program to input marks of five subjects Physics, Chemistry, Biology,     Mathematics and Computer. Calculate percentage and grade according to     following:
+    Percentage >= 90% : Grade A
+    Percentage >= 80% : Grade B
+    Percentage >= 70% : Grade C
+    Percentage >= 60% : Grade D
+    Percentage >= 40% : Grade E
+    Percentage < 40% : Grade F
+
+*    The Westland Game Fair is the premier event of its kind for kids interested in some intellectual and cognitive brain games. Alan, a middle school boy is visiting the fair where he is very much drawn by the Card game.
+The game’s rules are:
+A player needs to pick 3 cards from a big lot of cards. There are 4 types of Cards namely Spade(S), Heart(H), Club(C) and Diamond (D). If all the 3 cards that the player picks are of the same type and same number, they get a Double Bonanza. If all the 3 cards are of the same type or if they all have the same number, they get a Bonanza. Otherwise they do not get a Bonanza. Alan has now picked 3 cards and is awaiting to know if he has got a bonanza. Please help him to know if he has won the Bonanza or not.
+Input Format:
+There are 3 lines of input.
+Each of the line consists of character and integer input, which corresponds to the type of the card and the number in it that Alan picked. The type of card and the number are separated by a single space.
+Output Format:
+Output should display "Double Bonanza" or "Bonanza" or "No Bonanza" based on the conditions given.
+Refer sample input and output for formatting specifications.
+Sample Input 1:
+S 5
+S 5
+S 5
+Sample Output 1:
+Double Bonanza
+Sample Input 2:
+S 6
+S 5
+H 5
+Sample Output 2:
+No Bonanza
+*Write a JAVA program to find first and last digit of a number.
+
+Assignment 6/22/2022
+
+ 1.Write a JAVA program to find sum of first and last digit of a number.
+
+ 2. Write a JAVA program to enter a number and print its reverse.
+​
+ 3. Write a JAVA program to calculate product of digits of a number.
+​
+ 4.Write a JAVA program to check whether a number is palindrome or not.
+*****c20
+[2:46 PM] Madar Saheb
+    
+1)Fibonacci Series in Java
+2)Prime Number Program in Java
+3)Palindrome Program in Java
+4)Factorial Program in Java
+5)Armstrong Number in Java
+6)How to Generate Random Number in Java
+7)How to Print Pattern in Java
+8)How to Compare Two Objects in Java
+9)How to Create Object in Java
+10)How to Print ASCII Value in Java
+
+
+
+
+
+
+
+

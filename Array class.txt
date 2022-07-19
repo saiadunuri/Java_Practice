@@ -1,0 +1,224 @@
+//to print even numbers
+    import java.util.*;
+class Second
+  {​
+    public static void main(String args[])
+    {​
+    int n;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter array size");
+      n=sc.nextInt();
+    int a[]=new int[n];
+      System.out.println("enter array elements");
+      for(int i=0;i<n;i++)
+        {​
+          a[i]=sc.nextInt();
+        }​
+      System.out.println("Even elements are");
+      for(int i=0;i<n;i++)
+        {​
+          if(a[i]%2==0)
+          System.out.println(a[i]);
+        }​
+============================================================================================
+ //to print negative numbers
+   import java.util.*;
+class Second
+  {​
+    public static void main(String args[])
+    {​
+    int n;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter array size");
+      n=sc.nextInt();
+    int a[]=new int[n];
+      System.out.println("enter array elements");
+      for(int i=0;i<n;i++)
+        {​
+       for(int j=1;j<a[i];j++)
+       if(a[i]%j==0)
+       {
+      System.out.println(j);
+      }
+      }
+      }   
+      
+          
+    }​
+  }​
+       
+        
+        
+     
+      
+    }​
+  }​
+==========================================================
+//to find max value
+[12:59 PM] Lalitha Ujjaneni
+    import java.util.*;
+class Second
+  {​
+    public static void main(String args[])
+    {​
+    int n;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter array size");
+      n=sc.nextInt();
+    int a[]=new int[n];
+      System.out.println("enter array elements");
+      for(int i=0;i<n;i++)
+        {​
+          a[i]=sc.nextInt();
+        }​
+       int max=a[0];
+      System.out.println("maximum elemen is ");
+      for(int i=0;i<n;i++)
+        {​
+          if(a[i]>max)
+          max=a[i];
+        }​
+      System.out.println(max);
+          
+    }​
+  }​
+==================================================================
+//to find minimum element
+import java.util.*;
+class Min{
+  public static void main(String args[]){
+    int n;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter Array size");
+    n=sc.nextInt();
+    System.out.println("enter elements");
+    int a[]=new int[n];
+    for(int i=0;i<n;i++)
+      {
+        a[i]=sc.nextInt();
+      }
+    int minimum=a[0];
+    System.out.println("minimum value is");
+    for(int i=0;i<n;i++){
+      if(a[i]<minimum)
+        minimum=a[i];
+    }
+    System.out.println(minimum);
+  }
+}
+========================================================
+ Write a JAVA program to copy all elements from an array to another array.
+==============================================================================
+to insert the perticular value in perticular position.
+[12:30 PM] Lalitha Ujjaneni
+    import java.util.*;
+class Second
+  {​
+    public static void main(String args[])
+    {​
+       int n;
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter size of an array");
+      n=sc.nextInt();
+      int arr[]=new int[n+1];
+      System.out.println("array Length");
+      System.out.println(arr.length);
+      System.out.println("Enter array elements");
+      for(int i=0;i<n;i++)
+        {​
+          arr[i]=sc.nextInt();
+        }​
+      System.out.println("Before insertion");
+      for(int i=0;i<n;i++)
+        {​
+        System.out.println(arr[i]);
+        }​
+      System.out.println("enter the element which you want to insert");
+      int ele=sc.nextInt();
+      System.out.println("enter the position");
+      int position=sc.nextInt();
+      for(int i=(n-1);i>=(position-1);i--)
+        {​
+          arr[i+1]=arr[i];
+        }​
+      arr[position-1]=ele;
+      System.out.println("After insertion");
+      for(int i=0;i<arr.length;i++)
+        {​
+          System.out.println(arr[i]);
+        }​
+    
+    }​
+  }​
+=================================================================
+Task
+1.duplicate numbers
+2.count the duplicate numbers
+3.frequency of each digit and print the highest frequency number
+4.print unique elements 
+5.print palindrome numbers are there
+
+6.Input Format:
+First line of the input is an integer N that gives the number of rows and columns of the grid.
+Next N lines will have the board configuration with N*N cells. Assume that the maximum number in a cell can be 10. Grey colored cells are represented by the integer 20 in the matrix representation of the input configuration.
+ 
+Output Format:
+Output "Yes" (without quotes) if the given configuration is a valid initial configuration. Print "No" otherwise (without quotes).
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+5
+20 20 1 20 3
+20 20 20 20 20
+20 20 20 20 20
+20 20 20 20 20
+6 20 3 20 20
+ 
+Sample Output 1:
+Yes
+ 
+Sample Input 2:
+5
+20 20 1 20 3
+20 20 20 20 20
+20 20 12 20 20
+20 20 20 20 20
+6 20 3 20 20
+ 
+Sample Output 2:
+7.Input Format:
+First line of the input is an integer N that gives the number of rows and columns of the grid.
+Next N lines will have a valid initial board configuration with N*N cells. Assume that the maximum number in a cell can be 10. Grey colored cells are represented by the integer 20 in the matrix representation of the input configuration.
+ 
+Output Format:
+Output should display an integer that gives the count of numbered cells, given a valid initial board configuration.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+5
+20 20 1 20 3
+20 20 20 20 20
+20 20 20 20 20
+20 20 20 20 20
+6 20 3 20 20
+ 
+Sample Output 1:
+4
+ 
+Sample Input 2:
+9
+20 5 20 20 3 20 20 20 20
+20 20 8 20 20 20 20 5 20
+20 20 20 20 20 20 2 20 20
+20 20 20 20 20 20 20 20 20
+20 20 20 20 20 20 20 20 20
+20 20 20 20 20 20 20 20 20
+20 20 3 20 20 20 20 20 20
+20 3 20 20 20 20 3 20 20
+20 20 20 20 1 20 20 6 20
+ 
+Sample Output 2:
+
+
+
+
