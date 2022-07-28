@@ -1,0 +1,51 @@
+--create table Studentdetails(student_id int, fname varchar(10),lname varchar(10),age int,emailid varchar(30),gender varchar(6), address varchar(30), rollno int);
+--create table Deptdetails(deptid int, deptname varchar(10), createddate DATE);
+--create table subjectdeptdetails(subjectid int, subject varchar(10),deptid int);
+--create table studentmarks(name varchar(10),smid int,studentid int, subjectid int, marks int, percentage float);
+--create table Studentdeptdetails(sdeptid int,studentid int,depid int);
+--insert into Studentdetails values(1,'sai','adunuri',23,'saiadunuri502@gmail.com','male','hyderabad',502),(2,'raju','adunuri',27,'rajuadunuri502@gmail.com','male','warangal',503),(3,'deep','hiremath',25,'deep@gmail.com','female','hospet',504),(4,'nain','adunuri',21,'nain@gmail.com','female','warangal',505),(5,'king','kong',23,'kingkong@gmail.com','male','chennai',506),(11,'nitin','gudur',19,'nitin@gmail.com','male','bangalore',510),(17,'raju','chada',18,'raj@gmail.com','male','hanamkonda',512),(13,'yash','malapati',20,'yash@gmail.com','male','guntur',551),(15,'rinku','bode',21,'rinku@gmail.com','female','hanamkonda',515),(36,'nag','king',23,'nag@gmail.com','male','balnagar',536);
+--select *from Studentdetails;
+--insert into Deptdetails values(1,'CSE','08-23-2019'),(2,'ECE','04-20-2020'),(3,'EEE','08-23-2019'),(4,'ME','09-23-2020'),(5,'CE','06-15-2019');
+--select *from Deptdetails;
+--insert into subjectdeptdetails values(1,'java',1),(2,'sql',2),(3,'python',3),(4,'html',4),(5,'dbms',5);
+--select *from subjectdeptdetails;
+--insert into studentmarks values('sai',1,1,1,540,54),('raju',2,2,2,675,67.5),('nitin',3,3,3,971,97.1),('pratap',4,4,4,875,87.5),('vinay',5,5,5,765,76.5),('vinay',1,1,1,540,54),('sai',2,2,2,675,67.5),('pratap',3,3,3,971,97.1),('raju',4,4,4,875,87.5),('nitin',5,5,5,765,76.5),('raju',1,1,1,540,54),('vinay',2,2,2,675,67.5),('nitin',3,3,3,971,97.1),('sai',4,4,4,875,87.5),('pratap',5,5,5,765,76.5),('naveen',1,1,1,40,54),('naveen',1,1,1,60,54),('naveen',1,1,1,70,54);
+--select *from studentmarks;
+--insert into Studentdeptdetails values(1,1,1),(2,2,2),(3,3,3),(4,4,4),(5,5,5);
+-- select *from Studentdeptdetails;
+--select student_id from Studentdetails;
+--select *from Studentdetails where age>20;
+--select *from Studentdetails where student_id<10;
+--select *from Studentdetails where student_id="1" or student_id="2" or student_id="7";
+--select *from Studentdetails where student_id<=10 and student_id>=1
+--update Studentdetails set fname='vijay' where student_id='1';
+--update Deptdetails set deptname='CSE' where deptid='3';
+--update Studentdetails set age=20 where student_id="1" or student_id="2" or student_id="3";
+--insert into Deptdetails values(1,'','08-23-2019');
+--delete from Deptdetails where deptname='';
+--select *from Studentdetails where fname!=null;
+--select distinct age from Studentdetails;
+--select max(marks) from studentmarks;
+--select *from Studentdetails order by rollno desc;
+--select *from Studentdetails order by student_id;
+--select *from Studentdetails order by fname;
+--update Studentdetails set age=20 where fname like "a%";
+--select *from Studentdetails;
+--select age from Studentdetails where fname like "%p";
+--delete from Studentdetails where fname like "%v%";
+--select * from Studentdetails where age between 18 and 20 and name like "n%";
+--select max(marks),name from studentmarks;
+--select *from Studentdetails order by rollno desc;
+--select count(age) from Studentdetails where age<20;
+--select max(marks),name from studentmarks group by name;
+--select sum(marks),name from studentmarks group by name;
+--select max(marks),name from studentmarks group by name having sum(marks)>500;
+--select max(marks),name from studentmarks group by name having sum(marks)>500 and name like "v%";
+--select min(marks),name from studentmarks group by name having sum(marks)>500;
+--select subject from subjectdeptdetails where subject like "j%" and deptid in(1,2,7);
+--select count(gender) from Studentdetails where gender='female';
+--select count(fname),address from Studentdetails group by address having count(address)>6;
+
+
+
+
